@@ -1,0 +1,456 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.row{
+  width: 100%;
+}
+.row::after{
+  content: '';
+  clear: both;
+  display: table;
+  
+}
+
+[class*="col-"]{
+  float: left;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+#container{
+    max-width: 1000px;
+  
+  /*
+  font-family: 'Roboto', sans-serif;
+  
+  font-family: 'Handlee', cursive;
+  
+  */
+}
+
+
+
+/*Header Starts*/
+header{
+  background:#24a19c ;
+  text-align: center;
+  padding: 0 1%;
+  
+}
+.logo{
+  width: 70px;
+  height: 70px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 80px;
+  margin: 10px auto;
+  
+}
+nav ul li{
+  display: block;
+  
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 70px;
+  transition: .4s;
+  color: white;
+  margin: 0 10px;
+  
+}
+nav ul li a:hover{
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+
+/*Header Ends*/
+/*Bannner Starts*/
+#banner-section{
+  background-image: url('spicy.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.banner-contents {
+  text-align: center;
+  padding:0 2% ;
+  margin: 50px auto;
+  
+}
+.banner-contents h1{
+  background: yellow;
+  font-size: 3rem;
+  font-family: 'Handlee', cursive;
+  width: 100%;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.banner-contents p{
+  color: white;
+  font-size: 1.5rem;
+  background: green;
+  width: 300px;
+  margin: 15px auto;
+  padding: 10px;
+  
+}
+.btn{
+  color: white;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  height: 35px;
+  font-size: 1.3rem;
+  transition: .4s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+
+
+
+/*Bannner Ends*/
+/*About Us Starts*/
+#about-us{
+  padding: 0 10px;
+  text-align: center;
+}
+#about-us h3{
+  font-size: 2.5rem;
+  
+}
+#about-us p{
+  font-size: 0.9rem;
+  margin: 30px auto;
+}
+
+
+/*About Us Ends*/
+/*Food Menu Starts*/
+.card{
+  padding: 20px;
+  text-align: center;
+  transition: .4s;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.card-body img{
+  height: 400px;
+  width: 100%;
+  display: block;
+}
+.card-desc h3{
+  background: green;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.card-desc p{
+  background: gray;
+  line-height: 40px;
+  font-size: 0.8rem;
+}
+
+
+
+/*Food Menu Ends*/
+/*Contact Starts*/
+#contact{
+  padding: 10px;
+  background: gray;
+  text-align: center;
+}
+.map{
+  width: 100%;
+  height: 250px;
+}
+.contact-details{
+  padding: 30px;
+}
+.contact-details h4{
+  color: white;
+}
+.contact-details h5,address{
+  font-size: 0.8rem;
+  color: white;
+}
+.contact-details p{
+  font-size: 0.8rem;
+  color: white;
+  
+}
+
+/*Contact Ends*/
+/*footer Starts*/
+footer{
+  background: #060930;
+  text-align: center;
+  padding: 20px;
+}
+footer p{
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.media-links{
+  text-align: center;
+}
+.icon-style{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  margin: 0 10px;
+  line-height: 35px;
+  text-align: center;
+  
+  
+}
+
+/*footer Ends*/
+
+
+
+
+
+
+        /*Small devices (portrait tablets and large phone , 576px & up ) */
+
+    
+@media (min-width:576px) {
+      
+.col-sm-1 {
+        width: 8.33%;
+        
+      }
+.col-sm-2 {
+  width: 16.66%;
+  
+}
+.col-sm-3 {
+  width: 25%;
+  
+}
+.col-sm-4 {
+  width: 33.33%;
+  
+}
+.col-sm-5 {
+  width: 41.66%;
+  
+}
+.col-sm-6 {
+  width: 50%;
+  
+}
+.col-sm-7 {
+  width: 58.33%;
+  
+}
+.col-sm-8 {
+  width: 66.66%;
+  
+}
+.col-sm-9 {
+  width: 75%;
+  
+}
+.col-sm-10 {
+  width: 83.33%;
+  
+}
+.col-sm-11 {
+  width: 91.66%;
+  
+}
+.col-sm-12 {
+  width: 100%;
+  
+}
+
+}
+        /*Medium devices (portrait tablets and large phone , 768px & up ) */
+
+    
+@media (min-width:768px) {
+      
+.col-md-1 {
+        width: 8.33%;
+        
+      }
+.col-md-2 {
+  width: 16.66%;
+  
+}
+.col-md-3 {
+  width: 25%;
+  
+}
+.col-md-4 {
+  width: 33.33%;
+  
+}
+.col-sm-5 {
+  width: 41.66%;
+  
+}
+.col-md-6 {
+  width: 50%;
+  
+}
+.col-md-7 {
+  width: 58.33%;
+  
+}
+.col-md-8 {
+  width: 66.66%;
+  
+}
+.col-md-9 {
+  width: 75%;
+  
+}
+.col-md-10 {
+  width: 83.33%;
+  
+}
+.col-md-11 {
+  width: 91.66%;
+  
+}
+.col-md-12 {
+  width: 100%;
+  
+}
+
+}
+        /*large devices (portrait tablets and large phone , 992px & up ) */
+
+    
+@media (min-width:992px) {
+   .logo-section{
+     text-align: left;
+     
+     
+   }
+   .logo{
+     padding: 15px;
+     line-height: 50px;
+   }
+   .nav-bar{
+     text-align: right;
+     
+     
+   }
+   nav ul li{
+     display: inline-block;
+     
+   }
+   nav ul li a{
+     display: inline-block;
+     text-decoration: underline;
+   }
+   nav ul li a:hover{
+     background: transparent;
+     transform: scale(1.1);
+     border: none;
+     border-radius: 0;
+     
+   }
+   #banner-section{
+     height: 100vh;
+     position: relative;
+   }
+  .banner-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .banner-contents h1{
+    width: 700px;
+    font-size: 4rem;
+  }
+  .banner-contents p{
+    width: 500px;
+    font-size: 2.5rem;
+  }
+  footer p{
+    text-align: left;
+  }
+  .media-links{
+    text-align: right;
+  }
+
+
+      
+.col-lg-1 {
+        width: 8.33%;
+        
+      }
+.col-lg-2 {
+  width: 16.66%;
+  
+}
+.col-lg-3 {
+  width: 25%;
+  
+}
+.col-lg-4 {
+  width: 33.33%;
+  
+}
+.col-lg-5 {
+  width: 41.66%;
+  
+}
+.col-lg-6 {
+  width: 50%;
+  
+}
+.col-lg-7 {
+  width: 58.33%;
+  
+}
+.col-lg-8 {
+  width: 66.66%;
+  
+}
+.col-lg-9 {
+  width: 75%;
+  
+}
+.col-lg-10 {
+  width: 83.33%;
+  
+}
+.col-lg-11 {
+  width: 91.66%;
+  
+}
+.col-lg-12 {
+  width: 100%;
+  
+}
+
+}
